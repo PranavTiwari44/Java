@@ -1,6 +1,6 @@
 package carPackage;
 
-public class Car {
+abstract class Car {
     private int seats;
     private int wheels;
     private double weight;
@@ -33,7 +33,10 @@ public class Car {
     }
 
     Car(){
-        setTopSpeed(0);
+        setSeats(4);
+        setWheels(4);
+        setTopSpeed(100.00);
+        setWeight(1000);
     }
 
     Car(int weight){
@@ -41,6 +44,7 @@ public class Car {
         this.weight = weight;
     }
 
+    abstract public void move();
     boolean isHeaverThan(Car c){
         return this.weight < c.weight;
     }
