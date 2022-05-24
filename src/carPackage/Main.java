@@ -1,5 +1,8 @@
 package carPackage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main{
     public static void main(String[] args) {
         Car gtr = new GTR();
@@ -26,6 +29,7 @@ public class Main{
         System.out.println("Mustang`s highest speed is: " + mustang.getTopSpeed());
         mustang.drive();
         mustang.move();
+
 
         System.out.printf("\nIs %s is equals to %s: %s", "Mustang", "Gtr", mustang.equals(gtr));
     }
